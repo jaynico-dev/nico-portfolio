@@ -9,7 +9,8 @@ const Work = ({isDarkMode}) => {
       initial={{opacity: 0}}
       whileInView={{opacity: 1}}
       transition={{duration: 1}}
-      id='work' className='w-full px-[12%] py-10 scroll-mt-20'
+      id='work' 
+      className='w-full px-[12%] py-10 scroll-mt-20'
       >
 
         <motion.h2 
@@ -31,46 +32,51 @@ const Work = ({isDarkMode}) => {
           Welcome to my portfolio! Feel free to browse through the projects I've worked on.
         </motion.p>
 
-        {workData.map((project, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 * index }}
-            className={`flex flex-col md:flex-row items-center gap-10 my-16 ${
-              index % 2 === 1 ? 'md:flex-row-reverse' : ''
-            }`}
+        <motion.ul
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className='flex flex-col gap-10'
           >
-            {/* Image */}
-            <motion.div 
-              className='w-full md:w-1/2 rounded-xl overflow-hidden shadow-lg'
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.6 }}
+          {workData.map((project, index) => (
+            <motion.li
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              whileHover={{ scale: 1.02 }}
+              className={`flex flex-col md:flex-row items-center gap-10 p-6 ${
+                index % 2 === 1 ? 'md:flex-row-reverse' : ''
+              }`}
               >
-              <img
-                src={project.bgImage}
-                alt={project.title}
-                width={800}
-                height={500}
-                className='w-full h-auto object-cover rounded-xl'
-              />
-            </motion.div>
+              {/* Image */}
+              <div className='w-full md:w-1/2 rounded-xl overflow-hidden'>
+                <img
+                  src={project.bgImage}
+                  alt={project.title}
+                  width={800}
+                  height={500}
+                  className='w-full h-auto object-cover rounded-xl'
+                />
+              </div>
 
-            {/* Text Content */}
-            <div className={`w-full md:w-1/2 font-Ovo text-left ${index % 2 === 1 ? 'md:text-right' : 'md:text-left'}`}>
-              <h3 className='text-2xl font-semibold mb-4 text-gray-800 dark:text-white'>{project.title}</h3>
-              <p className='mb-4 text-gray-600 dark:text-white/80'>{project.description}</p>
-              <a
-                href={project.link}
-                target='_blank'
-                rel='noopener noreferrer'
-                className='inline-block mt-2 text-blue-600 dark:text-blue-400 hover:underline'
-              >
-                View Project →
-              </a>
-            </div>
-          </motion.div>
-        ))}
+              {/* Text Content */}
+              <div className={`w-full md:w-1/2 font-Ovo text-left ${index % 2 === 1 ? 'md:text-right' : 'md:text-left'}`}>
+                <h3 className='text-2xl font-semibold mb-4 text-gray-800 dark:text-white'>{project.title}</h3>
+                <p className='mb-4 text-gray-600 dark:text-white/80'>{project.description}</p>
+                <a
+                  href={project.link}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='inline-block mt-2 text-blue-600 dark:text-blue-400 hover:underline'
+                  >
+                  View Project →
+                </a>
+              </div>
+            </motion.li>
+          ))}
+        </motion.ul>
+
 
     </motion.div>
   )

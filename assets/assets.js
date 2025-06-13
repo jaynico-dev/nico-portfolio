@@ -75,15 +75,21 @@ export const assets = {
 export const workData = [
     {
         title: 'Inventotract',
-        description: 'Web application for inventory management',
+        description: 'Worked on a web application inventory management for Elanco Trading in the NegosyolabPH Business Development Services as a Developer Intern',
         link: 'https://elancotrading.com/uat-inventotrack/',
-        bgImage: '/inventotrack1.png',
+        bgImage: '/inventotract.gif',
+    },
+    {
+        title: 'PIT (Portable Inventotract)',
+        description: 'Worked on a portable version of Inventotract for inventory management for Elanco Trading  in the NegosyolabPH Business Development Services as a Developer Intern',
+        link: 'https://elancotrading.com/pit/',
+        bgImage: '/pit.gif',
     },
     {
         title: 'Gazeguard',
-        description: 'Measuring and managing screentime with eye tracking system',
+        description: 'Measuring and managing screentime with eye tracking system - Thesis project',
         link: 'https://github.com/JNico07/GazeGuard',
-        bgImage: '/GazeGuard.gif',
+        bgImage: '/gazeguard.gif',
     },
 ]
 
@@ -95,10 +101,20 @@ export const serviceData = [
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+  {
+    icon: assets.code_icon,
+    iconDark: assets.code_icon_dark,
+    title: 'Languages',
+    description: 'Java, C#, Python, HTML, CSS, JavaScript, PHP'
+  },
+  {
+    icon: assets.edu_icon,
+    iconDark: assets.edu_icon_dark,
+    title: 'Education',
+    description: 'Bachelor of Science in Computer Science'
+  }
 ];
+
 
 export const toolsData = [
     assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git

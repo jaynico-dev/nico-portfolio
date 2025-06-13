@@ -1,5 +1,6 @@
 import { workExperience } from '@/assets/assets'
 import React, { useState } from 'react'
+import { motion } from "motion/react"
 
 const Experience = () => {
   const [activeIndex, setActiveIndex] = useState(0)
@@ -7,12 +8,27 @@ const Experience = () => {
   const { role, company, duration, details, projects } = workExperience[activeIndex]
 
   return (
-    <div id='experience' className='w-full px-[12%] py-10 scroll-mt-20'>
-      <h2 className='text-center mb-14 text-5xl font-Ovo'>
-        Where I've Worked
-      </h2>
+    <motion.div 
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      id='experience' 
+      className='w-full px-[12%] py-10 scroll-mt-20'>
 
-      <div className='flex flex-col md:flex-row gap-10 mt-10 mb-20'>
+      <motion.h2 
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+        className='text-center mb-14 text-5xl font-Ovo'>
+        Where I've Worked
+      </motion.h2>
+
+      <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+        className='flex flex-col md:flex-row gap-10 mt-10 mb-20'>
+
         {/* Sidebar */}
         <div className='flex md:flex-col gap-4 md:w-1/4 w-full md:border-r border-gray-300 dark:border-white'>
           {workExperience.map((exp, index) => (
@@ -55,7 +71,12 @@ const Experience = () => {
                 <h4 className='text-lg font-semibold mb-4 text-gray-800 dark:text-white'>
                   Key Projects
                 </h4>
-                <ul className='space-y-3'>
+
+                <a 
+                  href="#work" 
+                  className='block cursur-pointer'
+                  >
+                  <ul className='space-y-3'>
                   {projects.map((project, index) => (
                     <li
                       key={index}
@@ -72,12 +93,16 @@ const Experience = () => {
                     </li>
                   ))}
                 </ul>
+                </a>
+
+                
               </div>
             )}
           </ul>
         </div>
-      </div>
-    </div>
+        
+      </motion.div>
+    </motion.div>
   )
 }
 

@@ -38,15 +38,6 @@ const Contact = () => {
             id='contact' 
             className='w-full px-[12%] py-10 scroll-mt-20 bg-[url("/footer-bg-color.png")] bg-no-repeat bg-center bg-[length:90%_auto] dark:bg-none'
             >
-            <motion.h4 
-                initial={{opacity: 0, y: -20}}
-                whileInView={{opacity: 1, y: 0}}
-                transition={{duration: 0.5, delay: 0.3}}
-                className='text-center mb-2 text-lg font-Ovo'
-                >
-                Connect with me
-            </motion.h4>
-
 
             <motion.h2 
                 initial={{opacity: 0, y: -20}}
@@ -54,7 +45,7 @@ const Contact = () => {
                 transition={{duration: 0.5, delay: 0.5}}
                 className='text-center text-5xl font-Ovo'
                 >
-                    Get in touch
+                    Connect with me
             </motion.h2>
 
 
@@ -64,7 +55,7 @@ const Contact = () => {
                 transition={{duration: 0.5, delay: 0.7}}
                 className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'
                 >
-                I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Whether you have a question or just want to say hi, feel free to reach out!
+                I'm always open for new opprtunities and collaborations. If you have any questions, feedback, or just want to say hi, feel free to reach out!
             </motion.p>
 
 
