@@ -64,14 +64,31 @@ const Work = ({isDarkMode}) => {
               <div className={`w-full md:w-1/2 font-Ovo text-left ${index % 2 === 1 ? 'md:text-right' : 'md:text-left'}`}>
                 <h3 className='text-2xl font-semibold mb-4 text-gray-800 dark:text-white'>{project.title}</h3>
                 <p className='mb-4 text-gray-600 dark:text-white/80'>{project.description}</p>
-                <a
-                  href={project.link}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className='inline-block mt-2 text-blue-600 dark:text-blue-400 hover:underline'
+
+                {/* Tools/Technologies */}
+                {project.tools && (
+                  <div className={`flex flex-wrap gap-2 mt-2 ${index % 2 === 1 ? 'justify-end' : ''}`}>
+                    {project.tools.split(',').map((tool, i) => (
+                      <span
+                        key={i}
+                        className='text-xs sm:text-sm px-2 py-1 bg-gray-100 dark:bg-white/10 text-gray-800 dark:text-white rounded-full border border-gray-300 dark:border-white/20'
+                      >
+                        {tool.trim()}
+                      </span>
+                    ))}
+                  </div>
+                )}
+
+                {project.link && (
+                  <a
+                    href={project.link}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='inline-block mt-2 text-blue-600 dark:text-blue-400 hover:underline'
                   >
-                  View Project →
-                </a>
+                    View Project →
+                  </a>
+                )}
               </div>
             </motion.li>
           ))}

@@ -9,6 +9,8 @@ import vscode from './vscode.png';
 import firebase from './firebase.png';
 import figma from './figma.png';
 import git from './git.png';
+import react from './react.png';
+import androidstudio from './androidstudio.png';
 import mongodb from './mongodb.png';
 import right_arrow_white from './right-arrow-white.png';
 import mail_icon from './mail_icon.png';
@@ -46,6 +48,8 @@ export const assets = {
     firebase,
     figma,
     git,
+    react,
+    androidstudio,
     mongodb,
     right_arrow_white,
     mail_icon,
@@ -77,17 +81,20 @@ export const workData = [
         title: 'Inventotract',
         description: 'Worked on a web application inventory management for Elanco Trading in the NegosyolabPH Business Development Services as a Developer Intern',
         link: 'https://elancotrading.com/uat-inventotrack/',
+        tools: 'PHP, HTML, JavaScript, Bootstrap CSS,CodeIgniter 3, MySQL, Bitbucket, Git, Winscp, Trello',
         bgImage: '/inventotract.gif',
     },
     {
         title: 'PIT (Portable Inventotract)',
         description: 'Worked on a portable version of Inventotract for inventory management for Elanco Trading  in the NegosyolabPH Business Development Services as a Developer Intern',
-        link: 'https://elancotrading.com/pit/',
+        tools: 'PHP, HTML, JavaScript, Bootstrap CSS,CodeIgniter 3, MySQL, Bitbucket, Git, Winscp, Trello',
+        link: '',
         bgImage: '/pit.gif',
     },
     {
         title: 'Gazeguard',
         description: 'Measuring and managing screentime with eye tracking system - Thesis project',
+        tools: 'Java, python, Android Studio, Firebase, YoloV5, Google Colab, Kaggle, GitHub, Git, Trello',
         link: 'https://github.com/JNico07/GazeGuard',
         bgImage: '/gazeguard.gif',
     },
@@ -117,8 +124,15 @@ export const infoList = [
 
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+  { icon: assets.vscode, name: 'VS Code' },
+  { icon: assets.androidstudio, name: 'Android Studio' },
+  { icon: assets.react, name: 'React' },
+  { icon: assets.git, name: 'Git' },
+  { icon: assets.figma, name: 'Figma' },
+  { icon: assets.mongodb, name: 'MongoDB' },
+  { icon: assets.firebase, name: 'Firebase' },
 ];
+
 
 export const workExperience = [
     {
