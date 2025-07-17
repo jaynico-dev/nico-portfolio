@@ -50,7 +50,7 @@ const About = ({isDarkMode}) => {
           className='flex-1'
           >
           <p className='mb-10 max-w-2xl font-Ovo'>
-            I am a Computer Science graduate with a passion for software development and a keen interest in web technologies. I have honed my skills in HTML, CSS, JavaScript, and React, and I am always eager to learn more. My goal is to create beautiful, functional, and user-friendly web applications that make a difference.
+            I am a Computer Science graduate with a passion for software development and a keen interest in web technologies. I have honed my skills in HTML, CSS, JavaScript, and React, and I am always eager to learn more. My goal is to create beautiful, functional, and user-friendly applications that make a difference.
           </p>
 
           <motion.ul 
