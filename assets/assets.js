@@ -104,6 +104,15 @@ export const workData = [
     link: "https://github.com/JNico07/GazeGuard",
     bgImage: "/gazeguard.gif",
   },
+  {
+    title: "EasyMealRecipes",
+    description:
+      "EasyMealRecipes is a full-stack web application for discovering, searching, and saving meal recipes.",
+    tools:
+      "React, TypeScript, Tailwind CSS, Node.js, Express, Prisma, PostgreSQL, Vite, TheMealDB API",
+    link: "https://easymealrecipes.vercel.app",
+    bgImage: "/easymealrecipes.gif",
+  },
 ];
 
 export const serviceData = [
@@ -140,7 +149,7 @@ export const infoList = [
     icon: assets.code_icon,
     iconDark: assets.code_icon_dark,
     title: "Languages",
-    description: "Java, C#, Python, HTML, CSS, JavaScript, PHP",
+    description: "Java, C#, Python, HTML, CSS, JavaScript, PHP, SQL",
   },
   {
     icon: assets.edu_icon,
