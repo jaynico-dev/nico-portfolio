@@ -35,6 +35,13 @@ import right_arrow from "./right-arrow.png";
 import send_icon from "./send-icon.png";
 import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
+import postgresql from "./postgresql.png";
+import prisma from "./prisma.png";
+import tailwind from "./tailwind.png";
+import vite from "./vite.png";
+import node from "./node.png";
+import express from "./express.png";
+import typescript from "./typescript.png";
 
 export const assets = {
   user_image,
@@ -74,6 +81,13 @@ export const assets = {
   send_icon,
   right_arrow_bold,
   right_arrow_bold_dark,
+  postgresql,
+  prisma,
+  tailwind,
+  vite,
+  node,
+  express,
+  typescript,
 };
 
 export const workData = [
@@ -167,6 +181,13 @@ export const toolsData = [
   { icon: assets.figma, name: "Figma" },
   { icon: assets.mongodb, name: "MongoDB" },
   { icon: assets.firebase, name: "Firebase" },
+  { icon: assets.postgresql, name: "PostgreSQL" },
+  { icon: assets.prisma, name: "Prisma" },
+  { icon: assets.tailwind, name: "Tailwind CSS" },
+  { icon: assets.vite, name: "Vite" },
+  { icon: assets.node, name: "Node.js" },
+  { icon: assets.express, name: "Express" },
+  { icon: assets.typescript, name: "TypeScript" },
 ];
 
 export const workExperience = [
