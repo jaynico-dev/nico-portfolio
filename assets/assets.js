@@ -115,7 +115,7 @@ export const workData = [
       "Developed an eye-tracking solution to monitor and regulate screen time, completed as a final-year thesis project.",
     tools:
       "Java, python, Android Studio, Firebase, YoloV5, Google Colab, Kaggle, GitHub, Git, Trello",
-    link: "https://github.com/JNico07/GazeGuard",
+    link: "https://github.com/jaynico-dev/GazeGuard",
     bgImage: "/gazeguard.gif",
   },
   {
