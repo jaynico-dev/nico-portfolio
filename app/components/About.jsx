@@ -32,7 +32,7 @@ const About = ({ isDarkMode }) => {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
           whileHover={{ scale: 1.05 }}
-          className="w-64 sm:w-80 rounded-3xl max-w-none group"
+          className="w-64 sm:w-80 rounded-3xl max-w-none group self-start"
         >
           <Image
             src={assets.user_image}
@@ -48,15 +48,17 @@ const About = ({ isDarkMode }) => {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="flex-1"
         >
-          <p className="mb-10 max-w-2xl font-Ovo">
-            Passionate and results-driven Software Developer with a background
-            in Computer Science and real-world internship experience in
-            full-stack web development using PHP, CodeIgniter, JavaScript, and
-            SQL. Strong foundation in Java and Python, solid exposure to React,
-            Firebase, and API development, with a commitment to clean,
-            maintainable code. Skilled in agile collaboration, problem-solving,
-            and eager to contribute to impactful tech projects while
-            continuously growing in the software engineering field.
+          <p className="mb-10 max-w-4xl font-Ovo">
+            I'm a software developer with hands-on experience in building web
+            and mobile applications. I’ve worked on full-stack projects using
+            technologies like Java, PHP, JavaScript, React.js, and SQL, and I
+            enjoy solving real-world problems through clean, maintainable code.
+            My background in Computer Science and recent internship allowed me
+            to work on live systems, fixing backend logic, improving UI/UX, and
+            optimizing APIs for better performance. I’m continuously learning
+            and open to opportunities where I can grow as a developer,
+            contribute to impactful projects, and collaborate with passionate
+            teams.
           </p>
 
           <motion.ul
