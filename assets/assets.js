@@ -95,7 +95,7 @@ export const workData = [
     title: "Inventotract",
     description:
       "Worked on Inventotract, a web-based inventory management application for Elanco Trading, at NegosyolabPH Business Development Services as a Developer Intern.",
-    link: "https://elancotrading.com/uat-inventotrack/",
+    link: "",
     tools:
       "PHP, HTML, JavaScript, Bootstrap CSS,CodeIgniter 3, MySQL, Bitbucket, Git, Winscp, Trello",
     bgImage: "/inventotract.gif",
