@@ -108,7 +108,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             </a>
           ) : (
             <a
-              href="https://drive.google.com/file/d/1qWQZFrMZ3K9sw-DgMBMWKtYQEVSItKF2/view?usp=sharing"
+              href="https://drive.google.com/file/d/1XKT3bUAW_NUQFOCACbQNyghblKrxHpVe/view?usp=sharing"
               target="_blank"
               className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black"
             >
