@@ -112,9 +112,9 @@ export const workData = [
   {
     title: "Gazeguard",
     description:
-      "Developed an eye-tracking solution to monitor and regulate screen time, completed as a final-year thesis project.",
+      "Developed a Java-based Android application to measure and limit screen time using eye-tracking technology, completed as a final-year thesis project.",
     tools:
-      "Java, python, Android Studio, Firebase, YoloV5, Google Colab, Kaggle, GitHub, Git, Trello",
+      "Java, Android Studio, Firebase, YoloV5, Python, Google Colab, Kaggle, GitHub, Git, Trello",
     link: "https://github.com/jaynico-dev/GazeGuard",
     bgImage: "/gazeguard.gif",
   },
@@ -210,12 +210,6 @@ export const workExperience = [
         techStack: "CodeIgniter, MySQL",
         description:
           "Developed a web application for inventory management, handling over 1M items across 12 warehouses.",
-      },
-      {
-        name: "PSP-Gym",
-        techStack: "CodeIgniter, MySQL",
-        description:
-          "Developed a gym management system with user authentication and membership tracking.",
       },
     ],
   },

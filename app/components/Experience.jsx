@@ -1,6 +1,7 @@
 import { workExperience } from "@/assets/assets";
 import React, { useState } from "react";
 import { motion } from "motion/react";
+import { handleScroll } from "@/utils/scrollUtils";
 
 const Experience = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -87,7 +88,10 @@ const Experience = () => {
               <h4 className="text-lg font-semibold mb-4 text-gray-800 dark:text-white">
                 Key Projects
               </h4>
-              <a href="#work" className="block cursor-pointer">
+              <a
+                onClick={() => handleScroll("work")}
+                className="block cursor-pointer"
+              >
                 <ul className="space-y-3">
                   {projects.map((project, index) => (
                     <li

@@ -5,7 +5,6 @@ import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
-import Services from "./components/Services";
 import Work from "./components/Work";
 import Experience from "./components/Experience";
 
@@ -37,7 +36,6 @@ export default function Home() {
       <Header isDarkMode={isDarkMode} />
       <About isDarkMode={isDarkMode} />
       <Experience isDarkMode={isDarkMode} />
-      {/* <Services isDarkMode={isDarkMode} /> */}
       <Work isDarkMode={isDarkMode} />
       <Contact isDarkMode={isDarkMode} />
       <Footer isDarkMode={isDarkMode} />
