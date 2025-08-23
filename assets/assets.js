@@ -94,18 +94,18 @@ export const workData = [
   {
     title: "Inventotract",
     description:
-      "Worked on Inventotract, a web-based inventory management application for Elanco Trading, at NegosyolabPH Business Development Services as a Developer Intern.",
+      "Worked on Inventotract, an internal web-based inventory management tool for Elanco Trading, at NegosyolabPH Business Development Services as a Developer Intern.",
     link: "",
     tools:
-      "PHP, HTML, JavaScript, Bootstrap CSS,CodeIgniter 3, MySQL, Bitbucket, Git, Winscp, Trello",
+      "PHP, HTML, JavaScript, Bootstrap CSS, CodeIgniter, MySQL, Bitbucket, Git, Winscp, Trello",
     bgImage: "/inventotract.gif",
   },
   {
     title: "PIT (Portable Inventotract)",
     description:
-      "Worked on a portable version of Inventotract, an inventory management system for Elanco Trading, at NegosyolabPH Business Development Services as a Developer Intern.",
+      "Worked on a portable version of Inventotract, a portable version of the internal inventory management tool (Inventotract) for Elanco Trading, at NegosyolabPH Business Development Services as a Developer Intern.",
     tools:
-      "PHP, HTML, JavaScript, Bootstrap CSS,CodeIgniter 3, MySQL, Bitbucket, Git, Winscp, Trello",
+      "PHP, HTML, JavaScript, Bootstrap CSS, CodeIgniter, MySQL, Bitbucket, Git, Winscp, Trello",
     link: "",
     bgImage: "/pit.gif",
   },
@@ -163,7 +163,7 @@ export const infoList = [
     icon: assets.code_icon,
     iconDark: assets.code_icon_dark,
     title: "Languages",
-    description: "Java, C#, Python, HTML, CSS, JavaScript, PHP, SQL",
+    description: "Java, PHP, JavaScript, HTML, CSS, SQL",
   },
   {
     icon: assets.edu_icon,
@@ -195,22 +195,25 @@ export const workExperience = [
     role: "Developer Intern",
     company: "NegosyolabPH Business Development Services",
     duration: "February 2025 - April 2025",
+    description:
+      "Established in 2017, NLP Business Development Services provides SME-focused consultancy and develops innovative software solutions to optimize operations through the latest technologies.",
     details: [
-      "Collaborated with a development team to maintain and enhance a live web application using PHP (CodeIgniter).",
-      "Implemented bug fixes, input validation, and improved UI/UX across multiple modules.",
-      "Developed dynamic PDF reports and optimized SQL queries for efficient data handling.",
-      "Contributed to API security and feature development in a real-world production environment.",
+      "Optimized backend features, SQL queries, and PHP controllers in CodeIgniter, improving page load times and data retrieval speed by an estimated 25–30%",
+      "Implemented security measures including host-restricted API filters, password hashing, input validation, MIME type checks, and file type restrictions to mitigate vulnerabilities.",
+      "Resolved 20+ critical bugs in a live PHP system, improving stability and user experience.",
+      "Enhanced UI/UX for admin dashboards and user-facing forms using HTML, CSS, JavaScript, and Bootstrap, including responsive layouts and dynamic elements.",
+      "Collaborated in Agile sprints on weekly task rotations and debugging with senior developers, using Git for version control and performing code reviews.",
     ],
     projects: [
       {
         name: "Inventotract",
-        techStack: "CodeIgniter 3, MySQL",
+        techStack: "CodeIgniter, MySQL",
         description:
           "Developed a web application for inventory management, handling over 1M items across 12 warehouses.",
       },
       {
         name: "PSP-Gym",
-        techStack: "Cideigniter 4, MySQL",
+        techStack: "CodeIgniter, MySQL",
         description:
           "Developed a gym management system with user authentication and membership tracking.",
       },

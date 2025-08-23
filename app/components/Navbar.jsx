@@ -1,6 +1,7 @@
 import { assets } from "@/assets/assets";
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
+import { handleScroll } from "@/utils/scrollUtils";
 
 const Navbar = ({ isDarkMode, setIsDarkMode }) => {
   const [isScroll, satIsScroll] = useState(false);
@@ -36,13 +37,9 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             : ""
         }`}
       >
-        {/* <a href='#top'>
-                <Image 
-                    src={isDarkMode ? assets.logo_dark : assets.logo} alt='' className='w-28 cursor-pointer mr-14' />
-            </a> */}
         <a
-          href="#top"
-          className="text-neutral-800 hover:text-black dark:text-neutral-400 dark:hover:text-white font-bold text-2xl transition-colors"
+          onClick={() => handleScroll("top")}
+          className="text-neutral-800 hover:text-black dark:text-neutral-400 dark:hover:text-white font-bold text-2xl transition-colors cursor-pointer"
         >
           Jay Nico
         </a>
@@ -55,29 +52,35 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           }`}
         >
           <li>
-            <a className="font-Ovo" href="#top">
+            <button onClick={() => handleScroll("top")} className="font-Ovo">
               Home
-            </a>
+            </button>
           </li>
           <li>
-            <a className="font-Ovo" href="#about">
+            <button onClick={() => handleScroll("about")} className="font-Ovo">
               About me
-            </a>
+            </button>
           </li>
           <li>
-            <a className="font-Ovo" href="#experience">
+            <button
+              onClick={() => handleScroll("experience")}
+              className="font-Ovo"
+            >
               Experience
-            </a>
+            </button>
           </li>
           <li>
-            <a className="font-Ovo" href="#work">
+            <button onClick={() => handleScroll("work")} className="font-Ovo">
               My Work
-            </a>
+            </button>
           </li>
           <li>
-            <a className="font-Ovo" href="#contact">
+            <button
+              onClick={() => handleScroll("contact")}
+              className="font-Ovo"
+            >
               Contact me
-            </a>
+            </button>
           </li>
         </ul>
 
@@ -93,7 +96,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           {/* Show Contact button when not scrolled, Resume button when scrolled */}
           {!isScroll ? (
             <a
-              href="#contact"
+              onClick={() => handleScroll("contact")}
               className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50"
             >
               Contact
@@ -142,27 +145,57 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           </div>
 
           <li>
-            <a className="font-Ovo" onClick={closemenu} href="#top">
+            <a
+              className="font-Ovo"
+              onClick={() => {
+                closemenu();
+                handleScroll("top");
+              }}
+            >
               Home
             </a>
           </li>
           <li>
-            <a className="font-Ovo" onClick={closemenu} href="#about">
+            <a
+              className="font-Ovo"
+              onClick={() => {
+                closemenu();
+                handleScroll("about");
+              }}
+            >
               About me
             </a>
           </li>
           <li>
-            <a className="font-Ovo" onClick={closemenu} href="#services">
-              Services
+            <a
+              className="font-Ovo"
+              onClick={() => {
+                closemenu();
+                handleScroll("experience");
+              }}
+            >
+              Experience
             </a>
           </li>
           <li>
-            <a className="font-Ovo" onClick={closemenu} href="#work">
+            <a
+              className="font-Ovo"
+              onClick={() => {
+                closemenu();
+                handleScroll("work");
+              }}
+            >
               My Work
             </a>
           </li>
           <li>
-            <a className="font-Ovo" onClick={closemenu} href="#contact">
+            <a
+              className="font-Ovo"
+              onClick={() => {
+                closemenu();
+                handleScroll("contact");
+              }}
+            >
               Contact me
             </a>
           </li>

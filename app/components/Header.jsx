@@ -2,10 +2,12 @@ import { assets } from "@/assets/assets";
 import Image from "next/image";
 import React from "react";
 import { motion } from "motion/react";
+import { handleScroll } from "@/utils/scrollUtils";
 
 const Header = () => {
+  
   return (
-    <div className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+    <div className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4" id="top">
       <motion.div
         initial={{ scale: 0 }}
         whileInView={{ scale: 1 }}
@@ -44,7 +46,7 @@ const Header = () => {
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 1 }}
-          href="#contact"
+          onClick={() => handleScroll("contact")}
           className="px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2 dark:bg-transparent"
         >
           contact me{" "}
@@ -55,7 +57,7 @@ const Header = () => {
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 1.2 }}
-          href="https://drive.google.com/file/d/1qWQZFrMZ3K9sw-DgMBMWKtYQEVSItKF2/view?usp=sharing"
+          href="https://drive.google.com/file/d/1XKT3bUAW_NUQFOCACbQNyghblKrxHpVe/view?usp=sharing"
           target="_blank"
           className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black"
         >
