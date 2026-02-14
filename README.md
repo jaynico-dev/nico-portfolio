@@ -3,7 +3,7 @@
 A modern, responsive **personal portfolio** built with **React** and **Next.js**.  
 It showcases projects, experience, and contact information with smooth animations, a dark mode toggle, and clean UX powered by **Tailwind CSS**.
 
-- **Link:** [Jay Nico](https://jaynico-portfolio.vercel.app/) 
+
 
 
 ## ✨ Features
